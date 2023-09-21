@@ -1,0 +1,490 @@
+body{
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: white;
+}
+h2, h3{
+    font-weight: normal;
+}
+.headsec {
+    position: relative;
+    z-index: 1;
+    height: 600px;
+    padding: 15px 160px;
+}
+
+.headsec .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(images/background.jpg) center center;
+    opacity: .3;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    width: 150px;
+}
+
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 0.1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px 10px;
+  }
+  
+  .dropdown {
+    position: relative;
+    /* display: inline-block; */
+    float: right;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+.signin{
+    background-color: red;
+    border: none;
+    height: 36px;
+    width: 100px;
+} 
+
+.signin:hover{
+    background-color: rgb(197, 3, 3);
+}
+
+.midsec{
+    color: white;
+    text-align: center;
+    margin-top: 170px;
+}
+.midsec h1{
+    font-size: 45px;
+}
+
+.midsec form input{
+    font-size: 20px;
+    width: 350px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgb(130, 129, 129);
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 0px 10px;
+    margin-right: 10px;
+}
+
+.midsec form button{
+    font-size: 25px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 0px 18px;
+    margin-right: 10px;
+}
+
+.content1{
+    display: inline-block;
+    background-color: black;
+    margin-top: 10px;
+    padding: 100px 150px;
+}
+
+.content1 .text{
+    padding: 80px 0px;
+    width: 50%;
+}
+.content1 .text h1{
+    font-size: 50px;
+}
+.content1 .img{
+    width: 50%;
+}
+.content1 .img img{
+    width: 90%;
+}
+
+.tv .text{
+    float: left;
+}
+.tv .img{
+    float: right;
+}
+
+.mobile .text{
+    float: right;
+}
+.mobile .img{
+    float: left;
+}
+
+.device .text{
+    float: left;
+}
+.device .img{
+    float: right;
+}
+
+.children .text{
+    float: right;
+}
+.children .img{
+    float: left;
+}
+
+.ques{
+    background-color: black;
+    margin-top: 10px;
+    padding: 50px 150px;
+    /* text-align: center; */
+}
+.ques h1{
+    text-align: center;
+    font-size: 47px;
+}
+
+
+.collapsible {
+    background-color: rgb(45,45,45);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    /* margin-bottom: 10px; */
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+  
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "X";
+}
+  
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color:rgb(45,45,45);
+    font-size: 25px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.footer-form form{
+    text-align: center;
+    margin-top: 50px;
+}
+.footer-form form input{
+    font-size: 20px;
+    width: 350px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgb(130, 129, 129);
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 0px 10px;
+    margin-right: 10px;
+}
+
+.footer-form form button{
+    font-size: 25px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    padding: 0px 18px;
+    margin-right: 10px;
+}
+
+
+footer{
+    margin-top: 10px;
+    padding: 50px 150px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.7);
+}
+footer a{
+    color:rgba(255, 255, 255, 0.7);
+}
+
+footer ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0;
+    gap: 0.7rem;
+}
+
+footer ul li{
+    list-style: none;
+    font-size: 16px;
+    
+}
+footer .dropdown{
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px){
+    .headsec{
+        padding: 20px;
+        height: 600px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .dropbtn{
+        font-size: 10px;
+        margin: 0px 6px;
+
+    }
+    .signin{
+        width: 70px;
+        height: 27px;
+    }
+    .dropdown-content{
+        font-size: 10px;
+        min-width: 50px;
+        padding: 3px;
+    }
+    .dropdown-content a {
+        padding: 8px 10px;
+    }
+    .midsec{
+        margin-top: 70px;
+    }
+    .midsec h1{
+        font-size: 35px;
+    }
+    .midsec h2{
+        font-size: 20px;
+    }
+    .midsec form input{
+        width: 85%;
+        height: 45px;
+        font-size: 16px;
+    }
+    .midsec form button{
+        margin-top: 15px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .content1{
+        text-align: center;
+        padding: 50px 50px;
+    }
+    
+    .content1 .text{
+        float: none;
+        padding: 20px 0px;
+        width: 100%;
+    }
+    .content1 .text h1{
+        font-size: 30px;
+    }
+    .content1 .text h2{
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .content1 .img{
+        float: none;
+        width: 100%;
+    }
+    .content1 .img img{
+        width: 90%;
+    }
+    .ques{
+        padding: 50px;
+    }
+    .ques h1{
+        font-size: 20px;
+    }
+    .ques .footer-form h3{
+        font-size: 15px;
+    }
+    .ques .footer-form input{
+        width: 85%;
+        height: 30px;
+        font-size: 14px;
+    }
+    .ques .footer-form button{
+        margin-top: 15px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .collapsible {
+        font-size: 14px;
+    }
+    .content{
+        font-size: 14px;
+    }
+    footer{
+        padding: 30px;
+    }
+    footer ul{
+        display: block;
+    }
+    footer ul li{
+        padding-bottom: 0.7rem;
+    }
+    
+}
+
+
+@media screen and (min-width: 600px) and (max-width:900px){
+    .headsec{
+        padding: 20px;
+        height: 400px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .dropbtn{
+        font-size: 10px;
+        margin: 0px 6px;
+
+    }
+    .signin{
+        width: 70px;
+        height: 27px;
+    }
+    .dropdown-content{
+        font-size: 10px;
+        min-width: 50px;
+        padding: 3px;
+    }
+    .dropdown-content a {
+        padding: 8px 10px;
+    }
+    .midsec{
+        margin-top: 70px;
+    }
+    .midsec h1{
+        font-size: 35px;
+    }
+    .midsec h2{
+        font-size: 20px;
+    }
+    .midsec form input{
+        width: 60%;
+        height: 45px;
+        font-size: 16px;
+    }
+    .midsec form button{
+        margin-top: 15px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .content1{
+        text-align: center;
+        padding: 50px 50px;
+    }
+    
+    .content1 .text{
+        float: none;
+        padding: 20px 0px;
+        width: 100%;
+    }
+    .content1 .text h1{
+        font-size: 30px;
+    }
+    .content1 .text h2{
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .content1 .img{
+        float: none;
+        width: 100%;
+    }
+    .content1 .img img{
+        width: 90%;
+    }
+    .ques{
+        padding: 50px;
+    }
+    .ques h1{
+        font-size: 20px;
+    }
+    .ques .footer-form h3{
+        font-size: 15px;
+    }
+    .ques .footer-form input{
+        width: 85%;
+        height: 30px;
+        font-size: 14px;
+    }
+    .ques .footer-form button{
+        margin-top: 15px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .collapsible {
+        font-size: 14px;
+    }
+    .content{
+        font-size: 14px;
+    }
+    footer{
+        padding: 30px;
+    }
+    footer ul{
+        display: grid;
+    }
+    footer ul li{
+        padding-bottom: 0.7rem;
+    }
+    
+}
